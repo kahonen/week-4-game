@@ -6,6 +6,9 @@ $(document).ready(function () {
     var crystal4=0;
     var wins = 0;
     var lose = 0;
+    var counter = 0;
+    var targetNumber = Math.floor(Math.random() * 102) + 19;
+    
 
     
     function newGame(){
@@ -17,10 +20,6 @@ $(document).ready(function () {
         $("#total").text(counter)
         console.log(counter);
     };
-
-    function newGame(){
-        var targetNumber = Math.floor(Math.random() * 102) + 19;    
-        var counter = 0;
         
     $("#goalNumber").text(targetNumber);
     console.log(targetNumber);
@@ -84,7 +83,7 @@ $(document).ready(function () {
         }
 }
 
-}
+})
 
 
 // var numberOptions = Math.floor(Math.random() * 12) + 1;
